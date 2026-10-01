@@ -1,117 +1,127 @@
-/* =====================================================================
-   YOUR PORTFOLIO CONTENT
-   This is the only file you need to edit.
-   Change the text between the quotes "like this", save, and refresh.
-   Every style (theme) reads from this file, so you only fill it in once.
-   ===================================================================== */
-
 window.PORTFOLIO = {
+  theme: "alex",
+  showThemePicker: false,
 
-  /* ---------- STYLE ----------
-     Pick your look: "terminal", "clean", or "story".
-     showThemePicker: true shows the style switcher in the corner.
-     Set it to false once you've picked your favorite.            */
-  theme: "clean",
-  showThemePicker: true,
-
-  /* ---------- ABOUT YOU ---------- */
-  name: "Anthony Cardozo",
-  initials: "AC",                       // shown if you don't add a photo
-  photo: "",                            // optional: "images/headshot.jpg"
-  headline: "Software engineer building cloud systems and developer tools.",
-  tagline: "I like building things people actually use.",   // used by the Story style
-  school: "CS at UT Austin, class of 2029",
+  name: "Alexander Saldana",
+  initials: "AS",
+  photo: "",
+  headline: "Mechanical Engineer focused on systems integration, field testing, and reliability.",
+  tagline: "Design. Build. Integrate. Test.",
+  school: "The University of Texas at Austin",
+  degree: "B.S. Mechanical Engineering, expected May 2028",
+  focus: "Robotics and Mechatronics",
   location: "Austin, TX",
-  status: "Looking for Summer 2027 internships",             // leave "" to hide
+  status: "Looking for Summer 2027 engineering internships",
 
-  about: "I've worked on AI evaluation at AWS, a browser-based compiler at a startup, and the platform my SHPE chapter runs on. Before all that, I built an online store for my family's candy business.",
+  about: "I work best close to the hardware. My experience centers on mechanical design, electromechanical integration, testing, troubleshooting, and turning requirements into hardware or procedures that teams can actually use.",
 
-  /* ---------- CONTACT ---------- */
-  email: "anthonycardozo06@gmail.com",
-  resume: "resume.pdf",                 // upload your resume with this exact name, or "" to hide
-  links: [
-    { label: "LinkedIn", url: "https://linkedin.com/in/anthony-cardozo-4361b6310" },
-    { label: "GitHub",   url: "https://github.com/your-username" },
+  proofPoints: [
+    "Authored more than 30 Engineering Orders for fleet maintenance execution.",
+    "Extended autonomous-vehicle telemetry range from about 300 m to 1 km.",
+    "Reviewed 150 corrosion cases and mapped 130 aircraft structural faults.",
+    "Co-founded and help lead a 35+ member tunnel boring organization."
   ],
 
-  /* ---------- EXPERIENCE ----------
-     Newest first. Copy a { ... }, block to add another.
-     Jobs, internships, research, org leadership, and your own
-     business all count.                                           */
+  email: "axsa0550@gmail.com",
+  resume: "resume.pdf",
+  links: [
+    { label: "LinkedIn", url: "https://linkedin.com/in/alexsaldana5" },
+    { label: "GitHub", url: "https://github.com/Alex-S0550" }
+  ],
+
   experience: [
     {
-      role: "Software Engineering Intern",
-      org: "Amazon Web Services",
-      place: "Seattle, WA",
-      dates: "Summer 2026",
-      summary: "Built a weekly pipeline that grades an AI root-cause-analysis agent and found fixes that raised its average score 23%.",
-      tags: ["Lambda", "SQS", "Bedrock", "DynamoDB"],
-    },
-    {
-      role: "Founding Engineer",
-      org: "One Dollar Computer",
+      role: "Co-Founder & Chief Engineer",
+      org: "Texas Boring",
       place: "Austin, TX",
-      dates: "2026 – now",
-      summary: "Built the cloud compiler that lets you write C or Rust in the browser and flash a RISC-V board in under 6 seconds.",
-      tags: ["C", "Rust", "GCP", "WebHID"],
+      dates: "Jul 2026 – Present",
+      summary: "Co-founded and help lead a 35+ member engineering organization developing a vertical tunnel boring machine. I focus on drivetrain architecture, shafting, bearing selection, mechanical interfaces, and staged verification.",
+      tags: ["Drivetrain", "SolidWorks", "FEA", "DFM", "Test Planning"]
     },
     {
-      role: "Website Lead",
-      org: "SHPE UT Austin",
+      role: "Testing & Evaluation Lead",
+      org: "ASCEND Texas",
       place: "Austin, TX",
-      dates: "2026 – now",
-      summary: "Lead the platform 400+ members use to earn points for convention and stipends. 1,000+ check-ins in the first 3 weeks.",
-      tags: ["React", "Supabase"],
+      dates: "Jan 2025 – Present",
+      summary: "Lead a six-member test team responsible for subsystem integration, field execution, failure documentation, and corrective-action verification across autonomous vehicle and UAV platforms.",
+      tags: ["Pixhawk", "MAVLink", "Telemetry", "HIL", "Root-Cause Analysis"]
     },
     {
-      role: "Founder",
-      org: "Cardozo Enchilados",
-      place: "Dallas, TX",
-      dates: "2023 – now",
-      summary: "Run a Mexican candy business with my family: 1,500+ units sold, plus a Stripe storefront that replaced taking orders over DMs.",
-      tags: ["React", "Express", "MongoDB", "Stripe"],
+      role: "Systems Engineer Co-Op",
+      org: "UPS Airlines",
+      place: "Louisville, KY",
+      dates: "May 2026 – Jul 2026",
+      summary: "Supported fleet engineering through condition monitoring, gearbox maintenance actions, component redesign, inspection development, and reliability troubleshooting.",
+      tags: ["Vibration Analysis", "Engineering Orders", "Reliability", "Inspection Development"]
     },
+    {
+      role: "Structures Engineer Co-Op",
+      org: "UPS Airlines",
+      place: "Louisville, KY",
+      dates: "Aug 2025 – Dec 2025",
+      summary: "Supported structural fleet engineering through corrosion trend analysis, engineering substantiation, component improvement, and maintenance-document revisions.",
+      tags: ["CPCP", "SRM", "Maintenix", "Power BI", "Substantiation"]
+    }
   ],
 
-  /* ---------- PROJECTS ----------
-     2 to 4 projects works best. Class projects count!
-     "result" is one line about what happened or what you learned.
-     "url" can link to a demo, GitHub repo, or photos ("" for none). */
   projects: [
     {
-      name: "HONK",
-      when: "Hackathon · Apr 2026",
-      stack: ["Next.js", "Gemini", "Firebase"],
-      summary: "A focus app that checks your screen every minute. Drift off task and it honks at you and takes your bread.",
-      result: "Distracted time dropped from 33% to 8%",
-      url: "",
+      name: "Autonomous Vehicle System Integration & Test",
+      when: "ASCEND Texas · 2025 – Present",
+      stack: ["Electromechanical Design", "Pixhawk", "MAVLink", "Telemetry", "Field Test"],
+      summary: "Integrated sensing, actuation, power, communications, and control hardware around a Pixhawk flight controller. Designed and validated a servo-actuated braking mechanism and executed HIL, ground, and flight tests.",
+      result: "Extended reliable telemetry from ~300 m to 1 km and validated a 60–100 ms braking response.",
+      image: "",
+      url: ""
     },
     {
-      name: "Landing Pad",
-      when: "Hackathon · Jul 2026",
-      stack: ["React", "TypeScript", "AWS CDK"],
-      summary: "A no-login city guide where outgoing interns pass down their favorite food, housing, and activity spots to the next class.",
-      result: "54 places on a color-coded map",
-      url: "",
+      name: "Vertical Tunnel Boring Machine",
+      when: "Texas Boring · 2026 – Present",
+      stack: ["Load Modeling", "Drivetrain Sizing", "CAD", "FEA", "DFM"],
+      summary: "Translate excavation torque and thrust requirements into drivetrain load cases for shafts, bearings, couplings, and reduction stages while coordinating mechanical interfaces across the machine.",
+      result: "Built the preliminary drivetrain architecture and component-sizing inputs from excavation loads.",
+      image: "",
+      url: ""
     },
     {
-      name: "SHPE Chapter Platform",
-      when: "SHPE · 2026",
-      stack: ["React", "Supabase"],
-      summary: "Event check-ins, a points leaderboard, and an officer dashboard for our chapter.",
-      result: "1,000+ check-ins in 3 weeks",
-      url: "",
+      name: "Electromechanical Lightsaber System",
+      when: "Personal Project · Jan 2026 – May 2026",
+      stack: ["SolidWorks", "FEA", "CNC", "3D Printing", "Embedded Electronics"],
+      summary: "Designed and assembled a compact electromechanical system integrating custom mechanical parts, lighting, power distribution, audio, wiring, and firmware inside a constrained package.",
+      result: "Completed a fully integrated mechanical, electrical, and embedded build.",
+      image: "",
+      url: ""
     },
+    {
+      name: "Aircraft Systems & Reliability",
+      when: "UPS Airlines · Summer 2026",
+      stack: ["Condition Monitoring", "Vibration Analysis", "Engineering Orders", "Reliability"],
+      summary: "Assessed gearbox and jack-screw vibration behavior, developed maintenance actions, created post-maintenance monitoring plans, and supported inspection development.",
+      result: "Authored 30+ Engineering Orders and supported acoustic leak inspection development.",
+      image: "",
+      url: ""
+    },
+    {
+      name: "Aircraft Structures & Corrosion Analysis",
+      when: "UPS Airlines · Fall 2025",
+      stack: ["CPCP", "STA / BL Mapping", "SRM", "Maintenix", "Power BI"],
+      summary: "Reviewed corrosion-prevention cases, mapped structural faults, evaluated recurring corrosion improvements, and developed engineering substantiation for component changes.",
+      result: "Mapped 130 faults from 150 CPCP cases and supported corrective actions using endurance-test evidence.",
+      image: "",
+      url: ""
+    }
   ],
 
-  /* ---------- SKILLS ----------
-     Group them however makes sense for your major.               */
   skills: [
-    { group: "Languages",  items: ["Java", "C", "Python", "JavaScript", "TypeScript", "x86 Assembly"] },
-    { group: "Frameworks", items: ["React", "Next.js", "Node", "Express", "Supabase", "Firebase"] },
-    { group: "Cloud",      items: ["AWS Lambda", "S3", "SQS", "DynamoDB", "Bedrock", "CDK"] },
+    { group: "Mechanical Design", items: ["System Architecture", "SolidWorks", "FEA", "Materials Selection", "DFM", "Load-Case Development", "Drivetrain Sizing"] },
+    { group: "Systems & Test", items: ["Verification & Validation", "System Integration", "HIL Testing", "Field & Flight Testing", "Sensor Integration", "Actuator Integration", "Fault Isolation", "Root-Cause Analysis"] },
+    { group: "Fabrication & Hardware", items: ["CNC Machining", "FDM Printing", "SLA Printing", "Laser Cutting", "MIG Welding", "Soldering", "Wiring", "Embedded Bring-Up"] },
+    { group: "Software & Tools", items: ["MATLAB", "Python", "Power BI", "Excel", "Pixhawk", "MAVLink", "CATIA", "Fusion 360", "AutoCAD"] }
   ],
 
-  /* ---------- AWARDS (optional, use [] for none) ---------- */
-  awards: ["Amazon Future Engineer Scholar", "Dijkstra Scholar", "HITEC Scholar", "HSF Scholar"],
+  awards: [
+    "Dr. Eric L. Jones Endowed Scholarship in Innovation",
+    "Maxine & Jack Zarrow Family Endowed Scholarship in Engineering",
+    "LULAC National Scholarship"
+  ]
 };
